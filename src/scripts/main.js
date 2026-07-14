@@ -356,7 +356,6 @@ const people = [
 
 // eslint-disable-next-line no-console
 
-
 const table = document.querySelector('.dashboard');
 
 if (table) {
@@ -368,7 +367,7 @@ if (table) {
 
     const cellsData = [
       person.name,
-      person.sex,
+      person.sex === 'm' ? 'Male' : 'Female',
       person.born,
       person.died,
       age,
